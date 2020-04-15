@@ -1,0 +1,78 @@
+<html>
+    <head>
+    <title>
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+         <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+        
+    </head>
+    <body>
+    	<!-- for playing sound on loading page -->
+    	 <audio src="buddha.mp3" id="my_audio" loop="loop"></audio>
+
+  <script type="text/javascript">
+    window.onload=function(){
+      document.getElementById("my_audio").play();
+
+
+    }
+
+  </script>
+  <!-- end of sound playing script -->
+        <section>
+        	<h1>बुद्धम शरणम् गच्छामी</h1>
+        	<!-- for  making boarder -->
+        	<div class="body dark-background" style=" background-image: url(https://i.ibb.co/nrmkm7d/five-bells-washed-out-logo.png) , linear-gradient(to right, rgba(58, 61, 62, 1) 0%, rgba(58, 61, 62, 1) 100%);">
+      <div class="outer-border">
+         <div class="mid-border">
+            <div class="inner-border">
+              <img class="corner-decoration corner-left-top" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+              <img class="corner-decoration corner-right-top" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+              <img class="corner-decoration corner-right-bottom" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+              <img class="corner-decoration corner-left-bottom" src="https://i.ibb.co/4mKvK3N/corner-decoration.jpg"></img>
+              <img class="vertical-decoration top" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png"></img>
+              <img class="vertical-decoration bottom" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png"></img>
+
+               <!-- Page Content -->
+               <div class="container">
+
+        	<div class="centerdiv">
+        		<div class="details">
+        			<br>
+        			<label>Enter your name</label>
+
+        			<input type="text" name="" id="nameid">
+                    
+        		<div class="imgdiv" >
+        			<img src="tenor.gif" align="center" width="125" height="125" class="imgchange">
+        		
+        	</div>
+        	<br>
+        	<button> Click Me</button>
+        
+    
+</div>
+  
+        	 </div>
+        	</div>
+        </div>
+
+        	        </section>
+     <!-- Use of API for randomly changing picture -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+  $('button').click(function(){
+   const name = $('#nameid').val();
+   alert(name);
+    $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+  // const b = $('.imgchange');
+   //console.log(b);
+
+  });
+ });
+</script>
+    </body>
+</html>
